@@ -1,0 +1,5 @@
+C:\Users\Minkov\Desktop\TaxiOrNot.Working\TaxiOrNot.EntityModels\bin\Debug\TaxiOrNot.EntityModels.dll
+C:\Users\Minkov\Desktop\TaxiOrNot.Working\TaxiOrNot.EntityModels\bin\Debug\TaxiOrNot.EntityModels.pdb
+C:\Users\Minkov\Desktop\TaxiOrNot.Working\TaxiOrNot.EntityModels\obj\Debug\TaxiOrNot.EntityModels.csprojResolveAssemblyReference.cache
+C:\Users\Minkov\Desktop\TaxiOrNot.Working\TaxiOrNot.EntityModels\obj\Debug\TaxiOrNot.EntityModels.dll
+C:\Users\Minkov\Desktop\TaxiOrNot.Working\TaxiOrNot.EntityModels\obj\Debug\TaxiOrNot.EntityModels.pdb

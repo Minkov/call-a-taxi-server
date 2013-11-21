@@ -1,0 +1,5 @@
+C:\Users\Minkov\Desktop\TaxiOrNot.Working\TaxiOrNot.ResponseModels\bin\Debug\TaxiOrNot.ResponseModels.dll
+C:\Users\Minkov\Desktop\TaxiOrNot.Working\TaxiOrNot.ResponseModels\bin\Debug\TaxiOrNot.ResponseModels.pdb
+C:\Users\Minkov\Desktop\TaxiOrNot.Working\TaxiOrNot.ResponseModels\obj\Debug\TaxiOrNot.ResponseModels.csprojResolveAssemblyReference.cache
+C:\Users\Minkov\Desktop\TaxiOrNot.Working\TaxiOrNot.ResponseModels\obj\Debug\TaxiOrNot.ResponseModels.dll
+C:\Users\Minkov\Desktop\TaxiOrNot.Working\TaxiOrNot.ResponseModels\obj\Debug\TaxiOrNot.ResponseModels.pdb
