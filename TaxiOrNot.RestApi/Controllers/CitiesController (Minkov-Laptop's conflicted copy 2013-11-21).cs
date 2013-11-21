@@ -26,17 +26,16 @@ namespace TaxiOrNot.RestApi.Controllers
         }
 
         [HttpGet]
-        public IQueryable<CityModel> GetAll(string location)
-        {
+        public IQueryable<CityModel> GetAll(string location){
             var locationModel = this.ParseLocation(location);
 
             var context = new TaxiOrNotDbContext();
-            return context.Cities
-                    .OrderBy(c => (c.Latitude - locationModel.Latitude) * (c.Latitude - locationModel.Latitude) +
-                        (c.Longitude - locationModel.Longitude) * (c.Longitude - locationModel.Longitude))
-                        .Select(Parser.ToCityModel);
+
+
         }
 
+        public 
+        
         [HttpGet]
         public CityDetailsModel GetById(int cityId)
         {
@@ -56,19 +55,10 @@ namespace TaxiOrNot.RestApi.Controllers
             });
         }
 
-
-        private LocationModel ParseLocation(string location)
-        {
-            var locationArgs = location.Split(';');
-            if (locationArgs.Length != 2)
-            {
-                throw new ArgumentOutOfRangeException("Invalid location");
-            }
-            return new LocationModel()
-            {
-                Latitude = decimal.Parse(locationArgs[0]),
-                Longitude = decimal.Parse(locationArgs[1]),
-            };
-        }
+        
+private LocationModel ParseLocation(string location)
+{
+ 	throw new NotImplementedException();
+}
     }
 }
