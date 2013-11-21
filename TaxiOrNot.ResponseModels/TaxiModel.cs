@@ -41,6 +41,10 @@ namespace TaxiOrNot.ResponseModels
         public string Telephone { get; set; }
 
         public string WebSite { get; set; }
+
+        public bool Liked { get; set; }
+
+        public bool Disliked { get; set; }
     }
 
     public class NewTaxiModel

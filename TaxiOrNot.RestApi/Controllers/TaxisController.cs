@@ -19,15 +19,26 @@ namespace TaxiOrNot.RestApi.Controllers
         {
             return this.ExecuteOperationAndHandleException(() =>
             {
-                //if (taxiId <= 0)
-                //{
-                //    throw new ArgumentOutOfRangeException("Invalid Taxi ID");
-                //}
-                //var context = new TaxiOrNotDbContext();
-                //var taxiEntity = context.Taxis.FirstOrDefault(t => t.Id == taxiId);
                 var context = new TaxiOrNotDbContext();
+
+
                 var taxiEntity = this.GetTaxiEntityById(taxiId, context);
-                return Parser.ToTaxiDetailsModel(taxiEntity);
+
+
+                var taxiModel = Parser.ToTaxiDetailsModel(taxiEntity);
+
+                var phoneId = this.GetPhoneIdHeaderValue();
+                var theUser = context.Users.FirstOrDefault(u => u.PhoneId == phoneId);
+
+
+                var taxiVoteByUser = taxiEntity.Votes.FirstOrDefault(v => v.UserId == theUser.Id);
+                if (taxiVoteByUser!=null)
+                {
+                    taxiModel.Liked = taxiVoteByUser.VoteType.Type == "liked";
+                    taxiModel.Disliked = taxiVoteByUser.VoteType.Type == "disliked";
+                }
+
+                return taxiModel;
             });
         }
 
@@ -107,7 +118,7 @@ namespace TaxiOrNot.RestApi.Controllers
         [HttpPut]
         [ActionName("like")]
         public HttpResponseMessage PutLikeTaxi(int taxiId)
-        {            
+        {
             return this.PlaceVote(taxiId, "liked", this.GetPhoneIdHeaderValue());
             //return this.ExecuteOperationAndHandleException(() =>
             //{
