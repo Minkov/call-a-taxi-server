@@ -123,17 +123,17 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaxiOrNot.Data\TaxiOrNot.Data.csproj">
+    <ProjectReference Include="..\TaxiOrNot.Data\CallATaxi.Data.csproj">
       <Project>{4b2b12da-7d0e-4be0-b853-578a0f5d9088}</Project>
-      <Name>TaxiOrNot.Data</Name>
+      <Name>CallATaxi.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TaxiOrNot.EntityModels\TaxiOrNot.EntityModels.csproj">
+    <ProjectReference Include="..\TaxiOrNot.EntityModels\CallATaxi.EntityModels.csproj">
       <Project>{c67837d5-5d5f-490d-a4e3-3896bce2da8d}</Project>
-      <Name>TaxiOrNot.EntityModels</Name>
+      <Name>CallATaxi.EntityModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TaxiOrNot.ResponseModels\TaxiOrNot.ResponseModels.csproj">
+    <ProjectReference Include="..\TaxiOrNot.ResponseModels\CallATaxi.ResponseModels.csproj">
       <Project>{b37fbadf-7d54-4949-8c75-b3f55f3016e5}</Project>
-      <Name>TaxiOrNot.ResponseModels</Name>
+      <Name>CallATaxi.ResponseModels</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

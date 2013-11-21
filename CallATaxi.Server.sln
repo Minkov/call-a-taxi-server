@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.20827.3
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiOrNot.RestApi", "TaxiOrNot.RestApi\TaxiOrNot.RestApi.csproj", "{79557253-FBBC-40D8-B1E0-F1A17FBDADD9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallATaxi.RestApi", "TaxiOrNot.RestApi\CallATaxi.RestApi.csproj", "{79557253-FBBC-40D8-B1E0-F1A17FBDADD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiOrNot.Data", "TaxiOrNot.Data\TaxiOrNot.Data.csproj", "{4B2B12DA-7D0E-4BE0-B853-578A0F5D9088}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallATaxi.Data", "TaxiOrNot.Data\CallATaxi.Data.csproj", "{4B2B12DA-7D0E-4BE0-B853-578A0F5D9088}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiOrNot.EntityModels", "TaxiOrNot.EntityModels\TaxiOrNot.EntityModels.csproj", "{C67837D5-5D5F-490D-A4E3-3896BCE2DA8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallATaxi.EntityModels", "TaxiOrNot.EntityModels\CallATaxi.EntityModels.csproj", "{C67837D5-5D5F-490D-A4E3-3896BCE2DA8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiOrNot.ResponseModels", "TaxiOrNot.ResponseModels\TaxiOrNot.ResponseModels.csproj", "{B37FBADF-7D54-4949-8C75-B3F55F3016E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallATaxi.ResponseModels", "TaxiOrNot.ResponseModels\CallATaxi.ResponseModels.csproj", "{B37FBADF-7D54-4949-8C75-B3F55F3016E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaxiOrNot.Server", "TaxiOrNot.Server", "{8A3503D5-C8DE-4590-8BBB-C636824111A1}"
 EndProject
@@ -60,9 +60,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{79557253-FBBC-40D8-B1E0-F1A17FBDADD9} = {8A3503D5-C8DE-4590-8BBB-C636824111A1}
 		{4B2B12DA-7D0E-4BE0-B853-578A0F5D9088} = {8A3503D5-C8DE-4590-8BBB-C636824111A1}
 		{C67837D5-5D5F-490D-A4E3-3896BCE2DA8D} = {8A3503D5-C8DE-4590-8BBB-C636824111A1}
 		{B37FBADF-7D54-4949-8C75-B3F55F3016E5} = {8A3503D5-C8DE-4590-8BBB-C636824111A1}
+		{79557253-FBBC-40D8-B1E0-F1A17FBDADD9} = {8A3503D5-C8DE-4590-8BBB-C636824111A1}
 	EndGlobalSection
 EndGlobal

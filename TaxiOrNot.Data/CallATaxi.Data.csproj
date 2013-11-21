@@ -59,9 +59,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaxiOrNot.EntityModels\TaxiOrNot.EntityModels.csproj">
+    <ProjectReference Include="..\TaxiOrNot.EntityModels\CallATaxi.EntityModels.csproj">
       <Project>{C67837D5-5D5F-490D-A4E3-3896BCE2DA8D}</Project>
-      <Name>TaxiOrNot.EntityModels</Name>
+      <Name>CallATaxi.EntityModels</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
