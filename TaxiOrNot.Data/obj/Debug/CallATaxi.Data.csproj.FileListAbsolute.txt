@@ -1,0 +1,12 @@
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\bin\Debug\TaxiOrNot.Data.dll.config
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\bin\Debug\TaxiOrNot.Data.dll
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\bin\Debug\TaxiOrNot.Data.pdb
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\bin\Debug\EntityFramework.dll
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\bin\Debug\TaxiOrNot.EntityModels.dll
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\bin\Debug\TaxiOrNot.EntityModels.pdb
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\bin\Debug\EntityFramework.xml
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\obj\Debug\CallATaxi.Data.csprojResolveAssemblyReference.cache
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\obj\Debug\TaxiOrNot.Data.Migrations.InitialCreate.resources
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\obj\Debug\CallATaxi.Data.csproj.GenerateResource.Cache
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\obj\Debug\TaxiOrNot.Data.dll
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.Data\obj\Debug\TaxiOrNot.Data.pdb

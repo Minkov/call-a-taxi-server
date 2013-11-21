@@ -32,7 +32,7 @@ namespace TaxiOrNot.RestApi.Controllers
 
 
                 var taxiVoteByUser = taxiEntity.Votes.FirstOrDefault(v => v.UserId == theUser.Id);
-                if (taxiVoteByUser!=null)
+                if (taxiVoteByUser != null)
                 {
                     taxiModel.Liked = taxiVoteByUser.VoteType.Type == "liked";
                     taxiModel.Disliked = taxiVoteByUser.VoteType.Type == "disliked";
@@ -120,36 +120,6 @@ namespace TaxiOrNot.RestApi.Controllers
         public HttpResponseMessage PutLikeTaxi(int taxiId)
         {
             return this.PlaceVote(taxiId, "liked", this.GetPhoneIdHeaderValue());
-            //return this.ExecuteOperationAndHandleException(() =>
-            //{
-            //    var context = new TaxiOrNotDbContext();
-
-            //    Taxi taxiEntity = GetTaxiEntityById(taxiId, context);
-
-            //    var userPhoneId = this.GetPhoneIdHeaderValue();
-            //    var user = GetUserByPhoneId(userPhoneId, context);
-
-            //    if (taxiEntity.Votes.Any(v => v.UserId == user.Id))
-            //    {
-            //        throw new InvalidOperationException("A user can vote only once for a taxi");
-            //    }
-
-            //    var likedVoteType = context.VoteTypes.FirstOrDefault(vt => vt.Type == "liked");
-            //    var vote = new Vote()
-            //    {
-            //        Taxi = taxiEntity,
-            //        User = user,
-            //        VoteType = likedVoteType
-            //    };
-
-            //    context.Votes.Add(vote);
-            //    context.SaveChanges();
-
-            //    var response = this.Request.CreateResponse(HttpStatusCode.Created);
-            //    response.Headers.Location = new Uri(Url.Link("TaxisApi", new { taxiId = taxiEntity.Id }));
-
-            //    return response;
-            //});
         }
 
         [HttpPut]
@@ -169,20 +139,26 @@ namespace TaxiOrNot.RestApi.Controllers
 
                 var user = this.GetUserByPhoneId(userPhoneId, context);
 
-                if (taxiEntity.Votes.Any(v => v.UserId == user.Id))
-                {
-                    throw new InvalidOperationException("A user can vote only once for a taxi");
-                }
 
+                var vote = taxiEntity.Votes.FirstOrDefault(v => v.UserId == user.Id);
                 var likedVoteType = context.VoteTypes.FirstOrDefault(vt => vt.Type == type);
-                var vote = new Vote()
+                 
+                if (vote == null)
                 {
-                    Taxi = taxiEntity,
-                    User = user,
-                    VoteType = likedVoteType
-                };
+                    vote = new Vote()
+                    {
+                        Taxi = taxiEntity,
+                        User = user,
+                        VoteType = likedVoteType
+                    };
 
-                context.Votes.Add(vote);
+                    context.Votes.Add(vote);
+
+                }
+                else
+                {
+                    vote.VoteType = likedVoteType;
+                }
                 context.SaveChanges();
 
                 var response = this.Request.CreateResponse(HttpStatusCode.Created);
