@@ -9,6 +9,12 @@ namespace TaxiOrNot.RestApi
     {
         public static void Register(HttpConfiguration config)
         {
+            //Init Server API routes
+            config.Routes.MapHttpRoute(
+                name: "InitApi",
+                routeTemplate: "api/init",
+                defaults: new { controller = "init" });
+
             // Taxis API routes
             config.Routes.MapHttpRoute(
                 name: "UsersApi",
@@ -31,6 +37,7 @@ namespace TaxiOrNot.RestApi
                 name: "TaxisPutApi",
                 routeTemplate: "api/taxis/{taxiId}/{action}",
                 defaults: new { controller = "taxis" });
+
 
             // Web API routes
             config.Routes.MapHttpRoute(
