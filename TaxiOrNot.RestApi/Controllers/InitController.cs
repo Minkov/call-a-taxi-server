@@ -19,6 +19,9 @@ namespace TaxiOrNot.RestApi.Controllers
                     var context = new TaxiOrNotDbContext();
                     this.GetUserByPhoneId(phoneId, context);
                 }
+                catch
+                {
+                }
                 return "Server is up and running";
             });
         }
