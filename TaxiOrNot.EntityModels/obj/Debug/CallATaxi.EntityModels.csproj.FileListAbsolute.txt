@@ -1,0 +1,5 @@
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.EntityModels\bin\Debug\TaxiOrNot.EntityModels.dll
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.EntityModels\bin\Debug\TaxiOrNot.EntityModels.pdb
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.EntityModels\obj\Debug\CallATaxi.EntityModels.csprojResolveAssemblyReference.cache
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.EntityModels\obj\Debug\TaxiOrNot.EntityModels.dll
+E:\Dropbox\Workspace\Hybrid-apps\CallATaxi.Server\TaxiOrNot.EntityModels\obj\Debug\TaxiOrNot.EntityModels.pdb

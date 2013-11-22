@@ -28,9 +28,7 @@ namespace TaxiOrNot.RestApi.Controllers
                 var taxiModel = Parser.ToTaxiDetailsModel(taxiEntity);
 
                 var phoneId = this.GetPhoneIdHeaderValue();
-                var theUser = context.Users.FirstOrDefault(u => u.PhoneId == phoneId);
-
-
+                var theUser = this.GetUserByPhoneId(phoneId, context);
                 var taxiVoteByUser = taxiEntity.Votes.FirstOrDefault(v => v.UserId == theUser.Id);
                 if (taxiVoteByUser != null)
                 {
@@ -142,7 +140,7 @@ namespace TaxiOrNot.RestApi.Controllers
 
                 var vote = taxiEntity.Votes.FirstOrDefault(v => v.UserId == user.Id);
                 var likedVoteType = context.VoteTypes.FirstOrDefault(vt => vt.Type == type);
-                 
+
                 if (vote == null)
                 {
                     vote = new Vote()
