@@ -136,7 +136,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="Views\Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -163,7 +164,7 @@
     <Compile Include="Controllers\InitController.cs" />
     <Compile Include="Controllers\TaxisController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
-    <Compile Include="Global.asax.cs">
+    <Compile Include="Views\Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\LocationModel.cs" />
